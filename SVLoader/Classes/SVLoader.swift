@@ -48,7 +48,7 @@ public class SVLoader: NSObject {
         sharedLoader.showLoaderWindowWith(message)
     }
     
-    public class func hideLoaderWithCompletion(completion: (() -> Void)? = nil) {
+    public class func hideLoader(completion: (() -> Void)? = nil) {
         if !sharedLoader.animating {
             return
         }
@@ -61,7 +61,6 @@ public class SVLoader: NSObject {
                 completion?()
             }
         })
-        
     }
     
     public class func set(font: UIFont) {
