@@ -14,7 +14,7 @@ public class SVLoader: NSObject {
     private var loaderWindow: UIWindow?
     private var holderView: HolderView!
     
-    public var animating = false {
+    var animating = false {
         didSet {
             holderView.shouldAnimate = animating
         }
@@ -61,6 +61,10 @@ public class SVLoader: NSObject {
                 completion?()
             }
         })
+    }
+    
+    public class func isAnimating() -> Bool {
+        return sharedLoader.animating
     }
     
     public class func set(font: UIFont) {
