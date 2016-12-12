@@ -48,7 +48,7 @@ public class SVLoader: NSObject {
         sharedLoader.showLoaderWindowWith(message)
     }
     
-    public class func hideLoaderWith(completion block: (() -> Void)? = nil) {
+    public class func hideLoaderWithCompletion(completion: (() -> Void)? = nil) {
         if !sharedLoader.animating {
             return
         }
@@ -58,7 +58,7 @@ public class SVLoader: NSObject {
         }, completion: {
             if $0 {
                 sharedLoader.loaderWindow?.resignKeyWindow()
-                block?()
+                completion?()
             }
         })
         
