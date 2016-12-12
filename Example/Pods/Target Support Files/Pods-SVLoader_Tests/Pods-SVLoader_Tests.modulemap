@@ -1,6 +1,0 @@
-framework module Pods_SVLoader_Tests {
-  umbrella header "Pods-SVLoader_Tests-umbrella.h"
-
-  export *
-  module * { export * }
-}

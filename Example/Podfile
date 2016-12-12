@@ -2,10 +2,4 @@ use_frameworks!
 
 target 'SVLoader_Example' do
   pod 'SVLoader', :path => '../'
-
-  target 'SVLoader_Tests' do
-    inherit! :search_paths
-
-    
-  end
 end
