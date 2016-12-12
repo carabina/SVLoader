@@ -7,18 +7,24 @@
 //
 
 import UIKit
+import SVLoader
 
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        SVLoader.set(UIFont(name: "HelveticaNeue", size: 15)!)
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    
+    @IBAction func startLoadingoTouched(sender: AnyObject) {
+        SVLoader.showLoaderWith("Loading...")
+        NSTimer.scheduledTimerWithTimeInterval(4.2, target: self, selector: #selector(hideLoader),
+                                               userInfo: nil, repeats: false)
     }
-
+    
+    func hideLoader() {
+        SVLoader.hideLoaderWith(completion: nil)
+    }
+    
 }
 

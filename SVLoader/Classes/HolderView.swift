@@ -24,7 +24,7 @@ class HolderView: UIView {
     
     override init(frame: CGRect) {
         super.init(frame: frame)
-        backgroundColor = UIColor.black.withAlphaComponent(0.4)
+        backgroundColor = UIColor.blackColor().colorWithAlphaComponent(0.4)
         addRectLayer()
         addOvalLayers()
         addLabel()
@@ -41,9 +41,9 @@ class HolderView: UIView {
     
     private func addRectLayer() {
         rectLayer = CALayer()
-        rectLayer.backgroundColor = UIColor.black.cgColor
+        rectLayer.backgroundColor = UIColor.blackColor().CGColor
         rectLayer.shadowOffset = CGSize(width: 0, height: 3)
-        rectLayer.shadowColor = UIColor.black.cgColor
+        rectLayer.shadowColor = UIColor.blackColor().CGColor
         rectLayer.shadowRadius = 5
         let width: CGFloat = 200
         let height: CGFloat = 120
@@ -55,8 +55,8 @@ class HolderView: UIView {
     private func addLabel() {
         let labelFrame = CGRect(x: rectLayer.frame.origin.x + 10, y: bounds.size.height / 2 - 30, width: rectLayer.frame.size.width - 15, height: 30)
         label = UILabel(frame: labelFrame)
-        label.textAlignment = .center
-        label.textColor = UIColor.white
+        label.textAlignment = .Center
+        label.textColor = UIColor.whiteColor()
         addSubview(label)
     }
     
@@ -69,10 +69,10 @@ class HolderView: UIView {
         if !shouldAnimate {
            return
         }
-        leftOvalLayer.startAnimatingInA(seconds: 0)
-        centralOvalLayer.startAnimatingInA(seconds: 0.4)
-        rigthOvalLayer.startAnimatingInA(seconds: 0.8)
-        Timer.scheduledTimer(timeInterval: 1.2, target: self, selector: #selector(animate),
+        leftOvalLayer.startAnimatingInA(0)
+        centralOvalLayer.startAnimatingInA(0.4)
+        rigthOvalLayer.startAnimatingInA(0.8)
+        NSTimer.scheduledTimerWithTimeInterval(1.2, target: self, selector: #selector(animate),
                              userInfo: nil, repeats: false)
     }
 }

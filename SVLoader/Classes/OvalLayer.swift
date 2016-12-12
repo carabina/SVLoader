@@ -14,29 +14,29 @@ class OvalLayer: CAShapeLayer {
     
     convenience init(center: CGPoint) {
         self.init()
-        fillColor = UIColor.white.cgColor
+        fillColor = UIColor.whiteColor().CGColor
         centralPoint = center
-        path = ovalPath.cgPath
+        path = ovalPath.CGPath
     }
     
     var ovalPath: UIBezierPath {
-        return UIBezierPath(ovalIn: CGRect(x: centralPoint.x, y: centralPoint.y, width: 8, height: 8))
+        return UIBezierPath(ovalInRect: CGRect(x: centralPoint.x, y: centralPoint.y, width: 8, height: 8))
     }
     
     var expandedOvalPath: UIBezierPath {
-        return UIBezierPath(ovalIn: CGRect(x: centralPoint.x - 2, y: centralPoint.y - 2, width: 12, height: 12))
+        return UIBezierPath(ovalInRect: CGRect(x: centralPoint.x - 2, y: centralPoint.y - 2, width: 12, height: 12))
     }
     
     func startAnimatingInA(seconds: CFTimeInterval) {
         let expandAnimation = CABasicAnimation(keyPath: "path")
-        expandAnimation.fromValue = ovalPath.cgPath
-        expandAnimation.toValue = expandedOvalPath.cgPath
+        expandAnimation.fromValue = ovalPath.CGPath
+        expandAnimation.toValue = expandedOvalPath.CGPath
         expandAnimation.beginTime = seconds
         expandAnimation.duration = 0.2
         
         let shrinkAnimation = CABasicAnimation(keyPath: "path")
-        shrinkAnimation.fromValue = expandedOvalPath.cgPath
-        shrinkAnimation.toValue = ovalPath.cgPath
+        shrinkAnimation.fromValue = expandedOvalPath.CGPath
+        shrinkAnimation.toValue = ovalPath.CGPath
         shrinkAnimation.beginTime = expandAnimation.duration + expandAnimation.beginTime
         shrinkAnimation.duration = 0.2
         
@@ -44,6 +44,6 @@ class OvalLayer: CAShapeLayer {
         animationGroup.animations = [expandAnimation, shrinkAnimation]
         animationGroup.duration = expandAnimation.beginTime + shrinkAnimation.duration + shrinkAnimation.duration
         animationGroup.fillMode = kCAFillModeForwards
-        add(animationGroup, forKey: nil)
+        addAnimation(animationGroup, forKey: nil)
     }
 }

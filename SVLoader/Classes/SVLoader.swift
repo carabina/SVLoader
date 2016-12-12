@@ -8,11 +8,12 @@
 
 import UIKit
 
-class Loader: NSObject {
+public class SVLoader: NSObject {
     
-    private static let sharedLoader = Loader()
+    private static let sharedLoader = SVLoader()
     private var loaderWindow: UIWindow?
     private var holderView: HolderView!
+    
     var animating = false {
         didSet {
             holderView.shouldAnimate = animating
@@ -21,42 +22,42 @@ class Loader: NSObject {
     
     override init() {
         super.init()
-        holderView = HolderView(frame: UIScreen.main.bounds)
+        holderView = HolderView(frame: UIScreen.mainScreen().bounds)
     }
     
-    private func showOnLoaderWindow() {
+    private func showLoaderWindowWith(message: String) {
         if loaderWindow == nil {
-            loaderWindow = UIWindow(frame: UIApplication.shared.keyWindow!.frame)
-            let lastWindowLevel = UIApplication.shared.windows.last!.windowLevel
+            loaderWindow = UIWindow(frame: UIApplication.sharedApplication().keyWindow!.frame)
+            let lastWindowLevel = UIApplication.sharedApplication().windows.last!.windowLevel
             loaderWindow!.windowLevel = lastWindowLevel + 1
             loaderWindow!.addSubview(holderView!)
             loaderWindow?.alpha = 0
         }
         loaderWindow!.makeKeyAndVisible()
-        UIView.animate(withDuration: 0.4, animations: {
+        UIView.animateWithDuration(0.4, animations: {
             self.loaderWindow!.alpha = 1
         })
-        holderView.showWith(message: "Hello")
+        holderView.showWith(message)
     }
 
-    class func showLoader() {
+    public class func showLoaderWith(message: String) {
         if sharedLoader.animating {
             return
         }
         sharedLoader.animating = true
-        sharedLoader.showOnLoaderWindow()
+        sharedLoader.showLoaderWindowWith(message)
     }
     
-    class func hideLoaderWith(completion block: (() -> Void)?) {
+    public class func hideLoaderWith(completion block: (() -> Void)?) {
         if !sharedLoader.animating {
             return
         }
         sharedLoader.animating = false
-        UIView.animate(withDuration: 0.4, animations: {
+        UIView.animateWithDuration(0.4, animations: {
             sharedLoader.loaderWindow?.alpha = 0
         }, completion: {
             if $0 {
-                sharedLoader.loaderWindow?.resignKey()
+                sharedLoader.loaderWindow?.resignKeyWindow()
                 block?()
             }
         })
@@ -64,7 +65,7 @@ class Loader: NSObject {
     }
     
     
-    class func set(font: UIFont) {
+    public class func set(font: UIFont) {
         sharedLoader.holderView.label.font = font
     }
 

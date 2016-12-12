@@ -7,14 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0C1B27C93B490534AA7604ED31A349EC /* HolderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EA7D15BC844A1B764CCB9BEB519F88A /* HolderView.swift */; };
-		0E5AA9B326F4F37611E8811EC4DDF0C7 /* SVLoader-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B39551511A7669CD79665375F0A070A0 /* SVLoader-dummy.m */; };
+		0610C99B4BC865F9C74185DC5ADD63DE /* SVLoader-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B39551511A7669CD79665375F0A070A0 /* SVLoader-dummy.m */; };
 		1B385502B5730CCEC9E7BD87D9440E61 /* Pods-SVLoader_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B3154F8E7ECB0A4005FCB9A849BE78E /* Pods-SVLoader_Example-dummy.m */; };
-		615C2A9662E949A094AD7DE5C67939AB /* OvalLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0947EE4A1310067208DAAB2DB8B482C9 /* OvalLayer.swift */; };
+		6528C2168F3153C9DE1FA6451AE7D8BD /* SVLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF1F30E22484F6171AEDBBDB4C7889A3 /* SVLoader.swift */; };
+		6C4DC22D810224E654A4C5EEB3CEA60D /* HolderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94384088CDBD37D577082F1B9D49D70C /* HolderView.swift */; };
 		87D3023809A5A2EA6D2BEB4B852F5454 /* Pods-SVLoader_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 48E42F1B2FA33A047E083980A3A2AF90 /* Pods-SVLoader_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8F04529F0518C86AFC07AA7F38D27E19 /* SVLoader-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A3C1A9F9E300CFFC9860AE80B6AEE8A1 /* SVLoader-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		944E60867D63E497115BFBFB0A571120 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
-		CF1D2F1F91ED35462B06CFDB7D7CD679 /* Loader.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2F4C0BB671A8A2E6BCB20F24D53AB6B /* Loader.swift */; };
+		A3095C2FF862FE7DF4B917C70F3F8F58 /* OvalLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B69FB289AC0FE7ED3A2C06D3E29A922D /* OvalLayer.swift */; };
 		F7DFA5CD98B904464DCBC5D4A9D88708 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
 /* End PBXBuildFile section */
 
@@ -30,26 +30,26 @@
 
 /* Begin PBXFileReference section */
 		0048F72A2856D2B1E0895D411292E4D8 /* Pods-SVLoader_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SVLoader_Example.release.xcconfig"; sourceTree = "<group>"; };
-		0947EE4A1310067208DAAB2DB8B482C9 /* OvalLayer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = OvalLayer.swift; sourceTree = "<group>"; };
 		10C72D23ECD4F1C7F64861A615AB868D /* Pods-SVLoader_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SVLoader_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		13583EE76A5C9D96D4BD3A6066F99103 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		48E42F1B2FA33A047E083980A3A2AF90 /* Pods-SVLoader_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SVLoader_Example-umbrella.h"; sourceTree = "<group>"; };
 		4DDA64459108193D936FBD4BF24CED36 /* Pods_SVLoader_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SVLoader_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		67AFF98A7656F9E896DABDE72859C381 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7F8FA6A42A4BDE2649225ED79F93F6B4 /* SVLoader.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = SVLoader.modulemap; sourceTree = "<group>"; };
-		8EA7D15BC844A1B764CCB9BEB519F88A /* HolderView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = HolderView.swift; sourceTree = "<group>"; };
 		91ED097AFFE2CBD914DDCEB234A19AB2 /* Pods-SVLoader_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SVLoader_Example-frameworks.sh"; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		94384088CDBD37D577082F1B9D49D70C /* HolderView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = HolderView.swift; sourceTree = "<group>"; };
 		9B0CE74323A5E0733A1F0BF39BE1F428 /* SVLoader.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SVLoader.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B3154F8E7ECB0A4005FCB9A849BE78E /* Pods-SVLoader_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SVLoader_Example-dummy.m"; sourceTree = "<group>"; };
 		A3C1A9F9E300CFFC9860AE80B6AEE8A1 /* SVLoader-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SVLoader-umbrella.h"; sourceTree = "<group>"; };
 		B39551511A7669CD79665375F0A070A0 /* SVLoader-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SVLoader-dummy.m"; sourceTree = "<group>"; };
 		B51607DD449BE31930AA0821C7364203 /* Pods-SVLoader_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SVLoader_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		B69FB289AC0FE7ED3A2C06D3E29A922D /* OvalLayer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = OvalLayer.swift; sourceTree = "<group>"; };
 		B6FA34CF81113D00F4BE5FCFA19D51EE /* SVLoader-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SVLoader-prefix.pch"; sourceTree = "<group>"; };
 		CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		D63A051EE952544DBF846745B3588DEE /* Pods-SVLoader_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SVLoader_Example-resources.sh"; sourceTree = "<group>"; };
 		D87E9208360A6A5C4E3BF9616173C2C5 /* Pods-SVLoader_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SVLoader_Example-acknowledgements.plist"; sourceTree = "<group>"; };
-		E2F4C0BB671A8A2E6BCB20F24D53AB6B /* Loader.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Loader.swift; sourceTree = "<group>"; };
+		DF1F30E22484F6171AEDBBDB4C7889A3 /* SVLoader.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SVLoader.swift; sourceTree = "<group>"; };
 		E40B30C2B1294D694CBE4194093DA064 /* SVLoader.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SVLoader.xcconfig; sourceTree = "<group>"; };
 		F2C7ECB59CCB5C74A4153F31907C39DB /* Pods-SVLoader_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-SVLoader_Example.modulemap"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -101,19 +101,9 @@
 		1E84FC7046CEFC0D9B0376E3E2D3E75A /* SVLoader */ = {
 			isa = PBXGroup;
 			children = (
-				3CED63822DAE27C748504804E6FDEFAF /* Classes */,
+				974DE0BCDC98D744B6926CE74C9C52AD /* Classes */,
 			);
 			path = SVLoader;
-			sourceTree = "<group>";
-		};
-		3CED63822DAE27C748504804E6FDEFAF /* Classes */ = {
-			isa = PBXGroup;
-			children = (
-				8EA7D15BC844A1B764CCB9BEB519F88A /* HolderView.swift */,
-				E2F4C0BB671A8A2E6BCB20F24D53AB6B /* Loader.swift */,
-				0947EE4A1310067208DAAB2DB8B482C9 /* OvalLayer.swift */,
-			);
-			path = Classes;
 			sourceTree = "<group>";
 		};
 		4EE33606867AD76B5821EEB417B8B573 /* Targets Support Files */ = {
@@ -159,6 +149,16 @@
 				CA836EC9933C5843587304E9C5A84AB1 /* Products */,
 				4EE33606867AD76B5821EEB417B8B573 /* Targets Support Files */,
 			);
+			sourceTree = "<group>";
+		};
+		974DE0BCDC98D744B6926CE74C9C52AD /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				94384088CDBD37D577082F1B9D49D70C /* HolderView.swift */,
+				B69FB289AC0FE7ED3A2C06D3E29A922D /* OvalLayer.swift */,
+				DF1F30E22484F6171AEDBBDB4C7889A3 /* SVLoader.swift */,
+			);
+			path = Classes;
 			sourceTree = "<group>";
 		};
 		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
@@ -212,7 +212,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 75B4100EC394E52C2F75EE29EB4346C4 /* Build configuration list for PBXNativeTarget "SVLoader" */;
 			buildPhases = (
-				56E1027CC916835B6D5F9A9567E21ACC /* Sources */,
+				4AFC582998C84E166DC490CA7AC0FAC6 /* Sources */,
 				06BD561A6F22DA70DD903AA5B7CEBA67 /* Frameworks */,
 				76E303C1279C916AC20976AA709A4B8F /* Headers */,
 			);
@@ -279,14 +279,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		56E1027CC916835B6D5F9A9567E21ACC /* Sources */ = {
+		4AFC582998C84E166DC490CA7AC0FAC6 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0C1B27C93B490534AA7604ED31A349EC /* HolderView.swift in Sources */,
-				CF1D2F1F91ED35462B06CFDB7D7CD679 /* Loader.swift in Sources */,
-				615C2A9662E949A094AD7DE5C67939AB /* OvalLayer.swift in Sources */,
-				0E5AA9B326F4F37611E8811EC4DDF0C7 /* SVLoader-dummy.m in Sources */,
+				6C4DC22D810224E654A4C5EEB3CEA60D /* HolderView.swift in Sources */,
+				A3095C2FF862FE7DF4B917C70F3F8F58 /* OvalLayer.swift in Sources */,
+				0610C99B4BC865F9C74185DC5ADD63DE /* SVLoader-dummy.m in Sources */,
+				6528C2168F3153C9DE1FA6451AE7D8BD /* SVLoader.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -332,6 +332,39 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		0B7CD778095D736B46CEA4BA68716F54 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E40B30C2B1294D694CBE4194093DA064 /* SVLoader.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SVLoader/SVLoader-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SVLoader/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SVLoader/SVLoader.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = SVLoader;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 2.3;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -413,39 +446,6 @@
 			};
 			name = Release;
 		};
-		9DCBE674A73F2589D9338CF70A041138 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = E40B30C2B1294D694CBE4194093DA064 /* SVLoader.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/SVLoader/SVLoader-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/SVLoader/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/SVLoader/SVLoader.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = SVLoader;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0.1;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
 		9E1E4E48AF2EAB23169E611BF694090A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -490,7 +490,7 @@
 			};
 			name = Debug;
 		};
-		A3A76B8BC2A804FA4F6942A7B47F61A7 /* Release */ = {
+		C20B48358FA70F8C3A3B4BF3D7B657B3 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = E40B30C2B1294D694CBE4194093DA064 /* SVLoader.xcconfig */;
 			buildSettings = {
@@ -515,7 +515,7 @@
 				PRODUCT_NAME = SVLoader;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0.1;
+				SWIFT_VERSION = 2.3;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -537,8 +537,8 @@
 		75B4100EC394E52C2F75EE29EB4346C4 /* Build configuration list for PBXNativeTarget "SVLoader" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				9DCBE674A73F2589D9338CF70A041138 /* Debug */,
-				A3A76B8BC2A804FA4F6942A7B47F61A7 /* Release */,
+				0B7CD778095D736B46CEA4BA68716F54 /* Debug */,
+				C20B48358FA70F8C3A3B4BF3D7B657B3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
