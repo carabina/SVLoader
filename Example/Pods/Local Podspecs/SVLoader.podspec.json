@@ -1,0 +1,22 @@
+{
+  "name": "SVLoader",
+  "version": "0.1.0",
+  "summary": "A short description of SVLoader.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/<GITHUB_USERNAME>/SVLoader",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "Slava Semeniuk": "slavasemeniuk@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/<GITHUB_USERNAME>/SVLoader.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "SVLoader/Classes/**/*"
+}

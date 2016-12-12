@@ -1,0 +1,16 @@
+PODS:
+  - SVLoader (0.1.0)
+
+DEPENDENCIES:
+  - SVLoader (from `../`)
+
+EXTERNAL SOURCES:
+  SVLoader:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  SVLoader: eef4f8c0fca8ab8db6f6ca0168ff151d30862cd1
+
+PODFILE CHECKSUM: c3946fd3a04584d8fe737b5389d43525e3a93f74
+
+COCOAPODS: 1.1.1
