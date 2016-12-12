@@ -14,7 +14,7 @@ public class SVLoader: NSObject {
     private var loaderWindow: UIWindow?
     private var holderView: HolderView!
     
-    var animating = false {
+    public var animating = false {
         didSet {
             holderView.shouldAnimate = animating
         }
